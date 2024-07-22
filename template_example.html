@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Reminder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7e5e5fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #e7e5e5fb;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #007BC0;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .content .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BC0;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Event Reminder</h1>
+        </div>
+        <div class="content">
+            <h2>Hello,</h2>
+            <p>We wanted to remind you about the upcoming event you registered for:</p>
+            <p><strong>Event Name:</strong> {{ event_name }}</p>
+            <p><strong>Date:</strong> {{ event_date }}</p>
+            <p><strong>Time:</strong> {{ event_time }}</p>
+            <p><strong>Location:</strong> {{ event_location }}</p>
+            <p>We look forward to seeing you there! If you have any questions or need further information, feel free to contact us.</p>
+            <a href="[Event URL]" class="button">View Event Details</a>
+        </div>
+        <div class="footer">
+            <p>If you no longer wish to receive these emails, you can <a href="[Unsubscribe URL]">unsubscribe here</a>.</p>
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
